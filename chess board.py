@@ -9,6 +9,12 @@ for i in range(board.shape[0]):
 
 cmap = ListedColormap(['black', 'white'])
 plt.matshow(board, cmap=cmap)
-plt.xticks([]) 
-plt.yticks([])
+
+cols = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+rows = ['8', '7', '6', '5', '4', '3', '2', '1']
+plt.xticks(range(8), cols) 
+plt.yticks(range(8), rows)
+plt.grid(False)
+plt.title('chessboard', fontsize = 14, pad = 10)
 plt.show()
+
