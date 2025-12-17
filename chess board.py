@@ -37,3 +37,4 @@ plt.title('chessboard', fontsize = 14, pad = 10)
 plt.show()
 
 
+
